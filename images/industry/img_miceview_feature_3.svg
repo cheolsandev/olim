@@ -1,0 +1,44 @@
+<svg id="그룹_13401" data-name="그룹 13401" xmlns="http://www.w3.org/2000/svg" width="94.544" height="81.776" viewBox="0 0 94.544 81.776">
+  <g id="그룹_13393" data-name="그룹 13393">
+    <g id="그룹_13391" data-name="그룹 13391">
+      <rect id="사각형_6099" data-name="사각형 6099" width="60.706" height="93.793" transform="translate(94.169 0.375) rotate(90)" fill="#fff"/>
+      <path id="패스_28671" data-name="패스 28671" d="M1794.816,305.274h-94.544V243.817h94.544Zm-93.794-.751h93.043V244.568h-93.043Z" transform="translate(-1700.272 -243.817)" fill="#8200ff"/>
+    </g>
+    <g id="그룹_13392" data-name="그룹 13392" transform="translate(6.403 5.295)">
+      <ellipse id="타원_15097" data-name="타원 15097" cx="1.032" cy="1.064" rx="1.032" ry="1.064" fill="#8200ff"/>
+      <ellipse id="타원_15098" data-name="타원 15098" cx="1.032" cy="1.064" rx="1.032" ry="1.064" transform="translate(4.127)" fill="#8200ff"/>
+      <ellipse id="타원_15099" data-name="타원 15099" cx="1.032" cy="1.064" rx="1.032" ry="1.064" transform="translate(8.254)" fill="#8200ff"/>
+    </g>
+  </g>
+  <g id="그룹_13394" data-name="그룹 13394" transform="translate(20.862 17.746)">
+    <path id="패스_28672" data-name="패스 28672" d="M1728.811,290.507l17.142-10.818,17.309,4.494,16.976-15.977" transform="translate(-1728.248 -267.643)" fill="#fff"/>
+    <path id="패스_28673" data-name="패스 28673" d="M1728.625,290.883a.563.563,0,0,1-.3-1.039l17.142-10.818a.56.56,0,0,1,.442-.068l17.008,4.415,16.749-15.764a.563.563,0,0,1,.772.821l-16.976,15.977a.565.565,0,0,1-.528.135l-17.073-4.432L1728.925,290.8A.565.565,0,0,1,1728.625,290.883Z" transform="translate(-1728.061 -267.456)" fill="#8200ff"/>
+  </g>
+  <g id="그룹_13395" data-name="그룹 13395" transform="translate(17.148 34.278)">
+    <rect id="사각형_6100" data-name="사각형 6100" width="8.654" height="20.97" transform="translate(0 22.476)" fill="#c07fff"/>
+    <rect id="사각형_6101" data-name="사각형 6101" width="8.654" height="31.664" transform="translate(17.198 11.781)" fill="#8200ff"/>
+    <rect id="사각형_6102" data-name="사각형 6102" width="8.654" height="27.224" transform="translate(34.395 16.222)" fill="#e0bfff"/>
+    <rect id="사각형_6103" data-name="사각형 6103" width="8.654" height="43.446" transform="translate(51.593)" fill="#6d5ffa"/>
+  </g>
+  <g id="그룹_13396" data-name="그룹 13396" transform="translate(5.601 11.255)">
+    <line id="선_3529" data-name="선 3529" x2="82.216" transform="translate(0.563 0.563)" fill="#fff"/>
+    <path id="패스_28674" data-name="패스 28674" d="M1790.512,259.935H1708.3a.563.563,0,0,1,0-1.126h82.216a.563.563,0,0,1,0,1.126Z" transform="translate(-1707.733 -258.809)" fill="#8200ff"/>
+  </g>
+  <g id="그룹_13397" data-name="그룹 13397" transform="translate(18.865 38.05)">
+    <ellipse id="타원_15100" data-name="타원 15100" cx="1.997" cy="1.997" rx="1.997" ry="1.997" transform="translate(0.563 0.563)" fill="#8200ff"/>
+    <path id="패스_28675" data-name="패스 28675" d="M1727.961,299.623a2.56,2.56,0,1,1,2.56-2.561A2.563,2.563,0,0,1,1727.961,299.623Zm0-3.995a1.434,1.434,0,1,0,1.434,1.434A1.436,1.436,0,0,0,1727.961,295.628Z" transform="translate(-1725.401 -294.502)" fill="#8200ff"/>
+  </g>
+  <g id="그룹_13398" data-name="그룹 13398" transform="translate(36.007 27.232)">
+    <ellipse id="타원_15101" data-name="타원 15101" cx="1.997" cy="1.997" rx="1.997" ry="1.997" transform="translate(0.563 0.563)" fill="#8200ff"/>
+    <path id="패스_28676" data-name="패스 28676" d="M1750.8,285.213a2.56,2.56,0,1,1,2.56-2.56A2.563,2.563,0,0,1,1750.8,285.213Zm0-3.995a1.434,1.434,0,1,0,1.434,1.435A1.436,1.436,0,0,0,1750.8,281.218Z" transform="translate(-1748.236 -280.092)" fill="#8200ff"/>
+  </g>
+  <g id="그룹_13399" data-name="그룹 13399" transform="translate(53.316 31.726)">
+    <ellipse id="타원_15102" data-name="타원 15102" cx="1.997" cy="1.997" rx="1.997" ry="1.997" transform="translate(0.563 0.563)" fill="#8200ff"/>
+    <path id="패스_28677" data-name="패스 28677" d="M1773.852,291.2a2.56,2.56,0,1,1,2.56-2.561A2.563,2.563,0,0,1,1773.852,291.2Zm0-3.995a1.434,1.434,0,1,0,1.434,1.434A1.436,1.436,0,0,0,1773.852,287.2Z" transform="translate(-1771.292 -286.078)" fill="#8200ff"/>
+  </g>
+  <g id="그룹_13400" data-name="그룹 13400" transform="translate(70.292 15.749)">
+    <ellipse id="타원_15103" data-name="타원 15103" cx="1.997" cy="1.997" rx="1.997" ry="1.997" transform="translate(0.563 0.563)" fill="#8200ff"/>
+    <path id="패스_28678" data-name="패스 28678" d="M1796.465,269.916a2.56,2.56,0,1,1,2.56-2.56A2.563,2.563,0,0,1,1796.465,269.916Zm0-3.995a1.434,1.434,0,1,0,1.434,1.435A1.436,1.436,0,0,0,1796.465,265.921Z" transform="translate(-1793.905 -264.795)" fill="#8200ff"/>
+  </g>
+  <rect id="사각형_6104" data-name="사각형 6104" width="88.002" height="4.615" rx="0.75" transform="translate(3.271 77.161)" fill="#8200ff"/>
+</svg>

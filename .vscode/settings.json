@@ -1,0 +1,11 @@
+{
+  "liveSassCompile.settings.formats":[
+    // This is Default.
+    {
+        "format": "compact",
+        "extensionName": ".css",
+        "savePath": "~/../css/"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": false
+}

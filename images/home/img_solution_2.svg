@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <clipPath id="clip-_00_r_ico1_02">
+      <rect width="120" height="120"/>
+    </clipPath>
+  </defs>
+  <g id="_00_r_ico1_02" data-name="00_r_ico1_02" clip-path="url(#clip-_00_r_ico1_02)">
+    <g id="그룹_13461" data-name="그룹 13461">
+      <g id="c_icon_01" transform="translate(1.328 4.059)" style="isolation: isolate">
+        <g id="레이어_1" data-name="레이어 1" transform="translate(5.674 9.941)">
+          <ellipse id="타원_15023" data-name="타원 15023" cx="21.565" cy="39.574" rx="21.565" ry="39.574" transform="matrix(0.041, -0.999, 0.999, 0.041, 10.571, 79.014)" fill="none" stroke="#ffe6be" stroke-miterlimit="10" stroke-width="5.332"/>
+          <ellipse id="타원_15024" data-name="타원 15024" cx="30.569" cy="49.776" rx="30.569" ry="49.776" transform="matrix(0.041, -0.999, 0.999, 0.041, 0, 87.674)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.71"/>
+          <image id="사각형_5839" data-name="사각형 5839" width="10.996" height="10.996" transform="translate(5.571 34.296)" opacity="0.75" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsSAAALEgHS3X78AAABPklEQVQ4T63U30pbQRAG8N9JbJAILbVQ0BvBJ/Bh7JV9vN71YdonELwShCoxJIQknvFi5yR7GurfDgyzDN98fDszuyLCU35x/qt5DhMRmojwt33/9rvJYxch4MfPs90C+kQVwUAhGVTYViFr2SXcECVJV7xXeZME68pbRE22p28DfMA+xhmHeMAC84yrzG2siYhOTUcyxid8xkeMsMQ97jBJwhXaTlWtqCY6xDG+KqoWuFGuubJV1G6Kq940STxW1BzhBKcZjzI/tu1d0w2oVtQo/RjZXu8LDhRV08yPElevRm+877JaUSj3XirNnOCP0p+ZbZOXievt0SC73vk6wXe4xhUuM15nfp64UO1SrahVpjHHbQKndse/GX1Vu7PZQ69YyKc2u1MVGWf+/UR69v8fbW1v+Uae/bBe+rE9Aucm+zTMpK8UAAAAAElFTkSuQmCC" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <circle id="타원_15025" data-name="타원 15025" cx="1.387" cy="1.387" r="1.387" transform="translate(9.413 38.432)" fill="#5b54cf"/>
+          <image id="사각형_5840" data-name="사각형 5840" width="10.996" height="10.996" transform="translate(17.178 78.281)" opacity="0.75" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAACXBIWXMAAAsSAAALEgHS3X78AAABUklEQVQ4T53US04jMRDG8V+TDjMZQDwGxGJYIbHnMuw4HjsuwzkQYsQMj/BIzKLKwQmJhCjJst3t+uurKpe7UopVdn521bX7i8vTlYe7ZaAGMAdCYTlwDtQA1gSkzgRkmqMswmaghFTnPscw9/CW4xUTTFtYPdTuh/iFHezjEAfYwyZ+YICuzWHPTE1VMsJ2Ou7gp1DwD7fpV0OcVFCrqPOhZg9/cIyTnI/wGxs+Qp6p6pfkZiSUHKbzFsb5/wF/89xcRftmXWFDEc5GQrZETkb5r0JWgqoVEfuLUNLjKde1YiXHzFpQEeUd4z9uhMJRfrvGnYC+LYK6Ukqt2kCUdhO7IrHbWBfq7kTVbnGPZ0zqXWoVTYX0x9y/iMQORDhjkezHPDdtfD/d7LV0HJpPbA371YqbvazXKrD2WQV9rdcWYHzufL7a/a0tvkV84z36jr0DaQePXY+/imAAAAAASUVORK5CYII=" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <circle id="타원_15026" data-name="타원 15026" cx="1.387" cy="1.387" r="1.387" transform="translate(21.075 82.148)" fill="#5b54cf"/>
+          <image id="사각형_5841" data-name="사각형 5841" width="10.996" height="10.385" transform="translate(95.373 58.732)" opacity="0.75" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAAACXBIWXMAAAsSAAALEgHS3X78AAABVklEQVQ4T43U3U4UQRCG4WdmF1j+YvyJB3oTXoweweVxxsXgHUCIaORARd11YXdoDrp6phk3hC+pTKan+52vq6u6SSnZpONPn5vx2Mnph82T0YxBFeA/EBKbgY9AAWnQRpT3FHEfkcawHhSQFhNsRUwr0BqriA73NaxJKdVOptjBHvYxC3CHJeZY4DbAvbOpQa3sYg8v8RovsI073OBHzC1b7Mri5ujjWe1mF6/wDu/xNsaWuMYVvgZwoXJVOyqwGQ7xJoAHsQj+4qchd71qUFEj52Vbhu7KyZ7JW58YTrNXDSrHuzIk9k98W+JffFsbyqFXG1kvkHUs+IXv+ILLeF7H+LKC9Ro7Wsn5KKczl7fU4XeMz2Peo8Js6Uu+dnQjO7rEOS7wTU70ogL1Gie75CjJtTMXP5N/Uqq7M2qTTb3G0GflyXN7rdYTN8Dzun+s8Z301H30AKs1qyeuhmv0AAAAAElFTkSuQmCC" style="mix-blend-mode: multiply;isolation: isolate"/>
+          <circle id="타원_15027" data-name="타원 15027" cx="1.387" cy="1.387" r="1.387" transform="translate(99.234 62.507)" fill="#5b54cf"/>
+          <path id="패스_28536" data-name="패스 28536" d="M60.547,75.132,89.858,61.215,61.787,45.045l-29.8,13.837Z" transform="translate(-9.348 -14.842)" fill="#5b54cf"/>
+          <path id="패스_28537" data-name="패스 28537" d="M95.934,26.227l-1.24,30.087L66.623,40.143l1-30.2Z" transform="translate(-14.184 -9.941)" fill="#ceccf1"/>
+          <path id="패스_28538" data-name="패스 28538" d="M33.227,23.845l29.561-13.9-1,30.2L31.987,53.98Z" transform="translate(-9.348 -9.941)" fill="#9d98e2"/>
+        </g>
+      </g>
+      <rect id="사각형_6118" data-name="사각형 6118" width="120" height="120" fill="none"/>
+    </g>
+  </g>
+</svg>
