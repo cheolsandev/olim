@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>올림플래닛</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+<!-- web font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- slick -->
+<link rel="stylesheet" type="text/css" href="./css/slick.css">
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="./css/page.css">
+
+</head>
+<body>
+
+  <a href="#contents" class="skip-navigation">컨텐츠 바로 가기</a>
+
+  <section id="wrap" class="support"><!-- support -->
+
+    <header>
+      <div class="cont">
+        <h1 class="header-logo">
+          <a href="./home.html">
+            <img src="./images/logo.svg" alt="Olim Planet">
+          </a>
+        </h1>
+        <nav class="main-nav" role="navigation" aria-label="사이트 메뉴">
+          <ul class="gnb">
+            <li>
+              <a href="./about_company.html">About</a>
+              <ul class="sub">
+                <li><a href="./about_company.html">회사소개</a></li>
+                <li><a href="./about_solution.html">솔루션</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./industry_zipview.html">Industry</a>
+              <ul class="sub">
+                <li><a href="./industry_zipview.html">부동산</a></li>
+                <li><a href="./industry_miceview.html">전시</a></li>
+                <li><a href="./industry_shopview.html">e커머스</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./story_casestudy.html">Story</a>
+              <ul class="sub">
+                <li><a href="./story_casestudy.html">케이스스터디</a></li>
+                <li><a href="./story_newsroom.html">뉴스룸</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="./pricing.html">Pricing</a>
+            </li>
+            <li>
+              <a href="./career_talent.html">Career</a>
+              <ul class="sub">
+                <li><a href="./career_talent.html">인재상</a></li>
+                <li><a href="./career_recruit.html">지원하기</a></li>
+              </ul>
+            </li>
+            <li class="on">
+              <a href="./support_contact.html">Support</a>
+              <ul class="sub">
+                <li class="on"><a href="./support_contact.html">문의하기</a></li>
+                <li><a href="./support_faq.html">FAQ</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="button">
+            <a href="./support_contact.html" class="btn-contact">문의하기</a>
+          </div>
+        </nav>
+        <button type="button" class="header-btn-nav">
+          <span class="btn">메뉴</span>
+        </button>
+      </div>
+      <div class="header-bg"></div>
+    </header>
+
+    <div id="contents">
+      <section class="support-contents">
+        <h1 class="hide">support</h1>
+        <!-- main cover -->
+        <div class="main-cover contact">
+          <div class="cover-text">
+            <div class="cont">
+              <h2>
+                문의하기
+              </h2>
+            </div>
+          </div>
+          <div class="cover-bg">
+            <div class="cont">
+              <span class="illust left"><img src="./images/support/img_contatct_cover_1.png" alt=""></span>
+              <span class="illust right"><img src="./images/support/img_contatct_cover_2.png" alt=""></span>
+            </div>
+          </div>
+        </div>
+        <!-- support - contact -->
+        <div class="support-sec contact">
+          <div class="contact-form">
+            <div class="cont">
+              <form>
+                <fieldset>
+                  <legend>문의하기 입력창</legend>
+                  <div class="form-item">
+                    <label for="inputName">이름</label>
+                    <input type="text" id="inputName">
+                    <p class="alert">이 필드는 필수입니다</p>
+                  </div>
+                  <div class="form-item">
+                    <label for="inputCompany">회사명</label>
+                    <input type="text" id="inputCompany">
+                    <p class="alert">이 필드는 필수입니다</p>
+                  </div>
+                  <div class="form-item">
+                    <label for="inputTitle">직함 (선택)</label>
+                    <input type="text" id="inputTitle">
+                  </div>
+                  <div class="form-item">
+                    <label for="inputEmail">이메일</label>
+                    <input type="text" id="inputEmail">
+                    <p class="alert">유효한 이메일 주소를 입력하세요</p>
+                  </div>
+                  <div class="form-item">
+                    <label for="inputPhone">휴대폰</label>
+                    <input type="text" id="inputPhone">
+                    <p class="alert">이 필드는 필수입니다</p>
+                  </div>
+                  <div class="form-item">
+                    <span class="label">관심서비스</span>
+                    <ul class="check-list">
+                      <li class="check-zipview">
+                        <input type="checkbox" id="serviceZV">
+                        <label for="serviceZV">집뷰</label>
+                      </li>
+                      <li class="check-miceview">
+                        <input type="checkbox" id="serviceMV">
+                        <label for="serviceMV">마이스뷰</label>
+                      </li>
+                      <li class="check-shopview">
+                        <input type="checkbox" id="serviceSV">
+                        <label for="serviceSV">샵뷰</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="form-item">
+                    <label for="inputPlace">사업지정보 (선택)</label>
+                    <input type="text" id="inputPlace">
+                  </div>
+                  <div class="form-item">
+                    <label for="inputTextarea">문의사항 (선택)</label>
+                    <div class="bd">
+                      <textarea id="inputTextarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <span class="label">개인정보 수집 및 동의</span>
+                    <div class="agree-policy">
+                      <div class="policy">
+                        <div class="text">
+                          (주)올림플래닛은 아래의 목적으로 개인정보를 수집 및 이용합니다.
+                          상담 서비스 제공을 위한 최소한의 개인정보제공에 동의해주셔야 서비스 이용이 가능합니다.
+                          상담 안내를 위한 용도 이외의 목적으로는 사용되지 않습니다.<br>
+                          <br>
+                          1. 목적: 서비스 이용안내, 본인 확인, 문의사항 답변<br>
+                          2. 항목: 이름, 회사명, 직함, 휴대폰번호, 이메일<br>
+                          3. 보유기간: 서비스 제공 목적 달성시 삭제, 법률 및 법령에 따른 보관의무가 있을경우 해당 기...
+                        </div>
+                      </div>
+                      <div class="agree">
+                        <input type="checkbox" id="agreePolicy">
+                        <label for="agreePolicy">개인정보 제공에 동의합니다.</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-button">
+                    <button type="button">보내기</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="cont">
+        <div class="links">
+          <ul>
+            <li><a href="https://www.youtube.com/c/Olimplanet" target="_blank" class="link-youtube">올림플래닛 유투브 바로가기</a></li>
+            <li><a href="https://blog.naver.com/olimplanet" target="_blank" class="link-blog">올림플래닛 블로그 바로가기</a></li>
+            <li><a href="https://www.facebook.com/olimplanet" target="_blank" class="link-facebook">올림플래닛 페이스북 바로가기</a></li>
+          </ul>
+        </div>
+        <div class="text">
+          <strong class="company">Olimplanet</strong>
+          <address>
+            <p><strong>(주)올림플래닛</strong> 서울특별시 강남구 선릉로 561 (역삼동, RUBINA사옥) 2F</p>
+            <p>TEL:  02-511-5110   FAX:  02-6499-2183</p>
+          </address>
+          <p class="copy">Copyright &copy; 2017 OLIM PLANET Inc.</p>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<!-- js -->
+<script src="./js/olimplanet.js"></script>
+
+<script>
+  var costListTab = $('.cost-list-tab'),
+  costListBody = $('.cost-list-body');
+
+  costListTab.find('a').on('click', function(event){
+    event.preventDefault();
+
+    var thisCate = $(this).attr('class');
+
+    costListTab.attr('class', 'cost-list-tab')
+    .addClass(thisCate + "-on");
+
+    var cate = thisCate.slice(4);
+    costListBody.hide()
+    .filter('.' + cate).show();
+  });
+</script>
+
+</body>
+</html>

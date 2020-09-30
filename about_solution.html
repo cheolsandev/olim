@@ -50,27 +50,30 @@
               </ul>
             </li>
             <li>
-              <a href="">Pricing</a>
+              <a href="./pricing.html">Pricing</a>
             </li>
             <li>
-              <a href="">Career</a>
+              <a href="./career_talent.html">Career</a>
               <ul class="sub">
-                <li><a href="">인재상</a></li>
-                <li><a href="">지원하기</a></li>
+                <li><a href="./career_talent.html">인재상</a></li>
+                <li><a href="./career_recruit.html">지원하기</a></li>
               </ul>
             </li>
             <li>
-              <a href="">Support</a>
+              <a href="./support_contact.html">Support</a>
               <ul class="sub">
-                <li><a href="">문의하기</a></li>
-                <li><a href="">FAQ</a></li>
+                <li><a href="./support_contact.html">문의하기</a></li>
+                <li><a href="./support_faq.html">FAQ</a></li>
               </ul>
             </li>
           </ul>
           <div class="button">
-            <a href="" class="btn-contact">문의하기</a>
+            <a href="./support_contact.html" class="btn-contact">문의하기</a>
           </div>
         </nav>
+        <button type="button" class="header-btn-nav">
+          <span class="btn">메뉴</span>
+        </button>
       </div>
       <div class="header-bg"></div>
     </header>
@@ -129,7 +132,10 @@
               <h3>뷰어</h3>
               <ul>
                 <li>플랫폼 내 실감형 콘텐츠 독립 제공</li>
-                <li>각 산업군에 적합한 뷰어 (부동산/전시/E커머스)</li>
+                <li>
+                  각 산업군에 적합한 뷰어<br>
+                  (부동산/전시/E커머스)
+                </li>
               </ul>
             </div>
           </div>
@@ -162,7 +168,7 @@
             <div class="industry-list">
               <ul>
                 <li>
-                  <a href="" class="item item_1">
+                  <a href="./industry_zipview.html" class="item item_1">
                     <div class="thumb">
                       <span class="img" style="background-image:url('./images/about/img_company_industry_1.png');"></span>
                     </div>
@@ -173,7 +179,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="" class="item item_2">
+                  <a href="./industry_miceview.html" class="item item_2">
                     <div class="thumb">
                       <span class="img" style="background-image:url('./images/about/img_company_industry_2.png');"></span>
                     </div>
@@ -184,7 +190,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="" class="item item_3">
+                  <a href="./industry_shopview.html" class="item item_3">
                     <div class="thumb">
                       <span class="img" style="background-image:url('./images/about/img_company_industry_3.png');"></span>
                     </div>
@@ -205,9 +211,9 @@
       <div class="cont">
         <div class="links">
           <ul>
-            <li><a href="#" target="_blank" class="link-youtube">올림플래닛 유투브 바로가기</a></li>
-            <li><a href="#" target="_blank" class="link-blog">올림플래닛 블로그 바로가기</a></li>
-            <li><a href="#" target="_blank" class="link-facebook">올림플래닛 페이스북 바로가기</a></li>
+            <li><a href="https://www.youtube.com/c/Olimplanet" target="_blank" class="link-youtube">올림플래닛 유투브 바로가기</a></li>
+            <li><a href="https://blog.naver.com/olimplanet" target="_blank" class="link-blog">올림플래닛 블로그 바로가기</a></li>
+            <li><a href="https://www.facebook.com/olimplanet" target="_blank" class="link-facebook">올림플래닛 페이스북 바로가기</a></li>
           </ul>
         </div>
         <div class="text">
@@ -231,17 +237,28 @@
   // var
   var thisHeight = 0,
   scrollStat = 1,
-  solutionMonitor = $('.solution-monitor');
+  solutionMonitor = $('.solution-monitor'),
+  topPadding = 121;
+
+  var checkWidth = function(){
+    var w = $(window).width();
+    if (w<=760) {
+      topPadding = 65;
+    } else {
+      topPadding = 121;
+    }
+  };
 
   // func
   var setHeight = function(){
-    thisHeight = $(window).height() - 121;
+    checkWidth();
+    thisHeight = $(window).height() - topPadding;
     $('.about-sec.solution').height(thisHeight).show();
     setPosition();
   };
   var setPosition = function(){
     var $this = $('.solution-monitor'),
-    thisPosition = (thisHeight * scrollStat) + 121 + (thisHeight/2) - ($this.height()/2);
+    thisPosition = (thisHeight * scrollStat) + topPadding + (thisHeight/2) - ($this.height()/2);
     $this.css('top', thisPosition + "px");
   };
 

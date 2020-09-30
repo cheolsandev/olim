@@ -18,7 +18,7 @@
 
   <section id="wrap" class="home"><!-- home -->
 
-    <header>
+    <header class=""><!-- header-nav-on : 모바일 메뉴 열기/닫기 -->
       <div class="cont">
         <h1 class="header-logo">
           <a href="./home.html">
@@ -27,29 +27,53 @@
         </h1>
         <nav class="main-nav" role="navigation" aria-label="사이트 메뉴">
           <ul class="gnb">
-            <li>
+            <li><!-- sub-on : 서브메뉴 열기/닫기 -->
               <a href="./about_company.html">About</a>
+              <ul class="sub">
+                <li><a href="./about_company.html">회사소개</a></li>
+                <li><a href="./about_solution.html">솔루션</a></li>
+              </ul>
             </li>
             <li>
               <a href="./industry_zipview.html">Industry</a>
+              <ul class="sub">
+                <li><a href="./industry_zipview.html">부동산</a></li>
+                <li><a href="./industry_miceview.html">전시</a></li>
+                <li><a href="./industry_shopview.html">e커머스</a></li>
+              </ul>
             </li>
             <li>
               <a href="./story_casestudy.html">Story</a>
+              <ul class="sub">
+                <li><a href="./story_casestudy.html">케이스스터디</a></li>
+                <li><a href="./story_newsroom.html">뉴스룸</a></li>
+              </ul>
             </li>
             <li>
-              <a href="">Pricing</a>
+              <a href="./pricing.html">Pricing</a>
             </li>
             <li>
-              <a href="">Career</a>
+              <a href="./career_talent.html">Career</a>
+              <ul class="sub">
+                <li><a href="./career_talent.html">인재상</a></li>
+                <li><a href="./career_recruit.html">지원하기</a></li>
+              </ul>
             </li>
             <li>
-              <a href="">Support</a>
+              <a href="./support_contact.html">Support</a>
+              <ul class="sub">
+                <li><a href="./support_contact.html">문의하기</a></li>
+                <li><a href="./support_faq.html">FAQ</a></li>
+              </ul>
             </li>
           </ul>
           <div class="button">
-            <a href="" class="btn-contact">문의하기</a>
+            <a href="./support_contact.html" class="btn-contact">문의하기</a>
           </div>
         </nav>
+        <button type="button" class="header-btn-nav">
+          <span class="btn">메뉴</span>
+        </button>
       </div>
       <div class="header-bg"></div>
     </header>
@@ -112,7 +136,7 @@
                 </li>
               </ul>
             </div>
-            <a href="https://www.olimplanet.com/about/solution" class="btn_bottom">더 알아보기</a>
+            <a href="https://www.olimplanet.com/about/solution" class="btn-bottom">더 알아보기</a>
           </div>
         </div>
         <!-- home - industry-->
@@ -208,7 +232,7 @@
                 </li>
               </ul>
             </div>
-            <a href="https://www.olimplanet.com/story/casestudy" class="btn_bottom">더 알아보기</a>
+            <a href="https://www.olimplanet.com/story/casestudy" class="btn-bottom">더 알아보기</a>
           </div>
         </div>
         <!-- home - newsroom-->
@@ -256,7 +280,7 @@
                 </li>
               </ul>
             </div>
-            <a href="https://www.olimplanet.com/story/newsroom" class="btn_bottom">더 알아보기</a>
+            <a href="https://www.olimplanet.com/story/newsroom" class="btn-bottom">더 알아보기</a>
           </div>
         </div>
         <!-- home - about-->
@@ -307,7 +331,7 @@
                 </li>
               </ul>
             </div>
-            <a href="https://www.olimplanet.com/about/company" class="btn_bottom">더 알아보기</a>
+            <a href="https://www.olimplanet.com/about/company" class="btn-bottom">더 알아보기</a>
           </div>
         </div>
         <!-- home - newsletter-->
@@ -315,7 +339,8 @@
           <div class="cont">
             <h2>뉴스레터 구독</h2>
             <div class="sub">
-              생생한 실감 산업 현장의 소식, 올림플래닛이 전해 드려요.
+              <span>생생한 실감 산업 현장의 소식,</span>
+              <span>올림플래닛이 전해 드려요.</span>
             </div>
             <div class="subscribe-form">
               <form>
@@ -333,8 +358,8 @@
               혁신적인 고객경험의 시작, 올림플래닛이 함께합니다
             </div>
             <div class="btn-right">
-              <a href="" class="btn-faq">FAQ</a>
-              <a href="" class="btn-contact">문의하기</a>
+              <a href="./support_faq.html" class="btn-faq">FAQ</a>
+              <a href="./support_contact.html" class="btn-contact">문의하기</a>
             </div>
           </div>
         </div>
@@ -345,9 +370,9 @@
       <div class="cont">
         <div class="links">
           <ul>
-            <li><a href="#" target="_blank" class="link-youtube">올림플래닛 유투브 바로가기</a></li>
-            <li><a href="#" target="_blank" class="link-blog">올림플래닛 블로그 바로가기</a></li>
-            <li><a href="#" target="_blank" class="link-facebook">올림플래닛 페이스북 바로가기</a></li>
+            <li><a href="https://www.youtube.com/c/Olimplanet" target="_blank" class="link-youtube">올림플래닛 유투브 바로가기</a></li>
+            <li><a href="https://blog.naver.com/olimplanet" target="_blank" class="link-blog">올림플래닛 블로그 바로가기</a></li>
+            <li><a href="https://www.facebook.com/olimplanet" target="_blank" class="link-facebook">올림플래닛 페이스북 바로가기</a></li>
           </ul>
         </div>
         <div class="text">

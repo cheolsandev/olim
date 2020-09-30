@@ -50,27 +50,30 @@
               </ul>
             </li>
             <li>
-              <a href="">Pricing</a>
+              <a href="./pricing.html">Pricing</a>
             </li>
             <li>
-              <a href="">Career</a>
+              <a href="./career_talent.html">Career</a>
               <ul class="sub">
-                <li><a href="">인재상</a></li>
-                <li><a href="">지원하기</a></li>
+                <li><a href="./career_talent.html">인재상</a></li>
+                <li><a href="./career_recruit.html">지원하기</a></li>
               </ul>
             </li>
             <li>
-              <a href="">Support</a>
+              <a href="./support_contact.html">Support</a>
               <ul class="sub">
-                <li><a href="">문의하기</a></li>
-                <li><a href="">FAQ</a></li>
+                <li><a href="./support_contact.html">문의하기</a></li>
+                <li><a href="./support_faq.html">FAQ</a></li>
               </ul>
             </li>
           </ul>
           <div class="button">
-            <a href="" class="btn-contact">문의하기</a>
+            <a href="./support_contact.html" class="btn-contact">문의하기</a>
           </div>
         </nav>
+        <button type="button" class="header-btn-nav">
+          <span class="btn">메뉴</span>
+        </button>
       </div>
       <div class="header-bg"></div>
     </header>
@@ -133,7 +136,7 @@
                         “국내 최초로 현장 부스 없이 진행한 3D 버추얼 박람회를 통해 차세대 전시 산업 모습을 선도했어요.”
                       </h3>
                       <p>Project. 집코노미 언택트 박람회</p>
-                      <a href="" class="link-more">더보기</a>
+                      <a href="./story_casestudy_view_1.html" class="link-more">더보기</a>
                     </div>
                   </div>
                 </li>
@@ -148,7 +151,7 @@
                         “실감 공간으로 구현한 온라인 쇼룸을 통해 효과적인 브랜딩 효과를 창출했어요 .”
                       </h3>
                       <p>Project. 플라키키(FLAKIKI)</p>
-                      <a href="" class="link-more">더보기</a>
+                      <a href="./story_casestudy_view_1.html" class="link-more">더보기</a>
                     </div>
                   </div>
                 </li>
@@ -163,7 +166,7 @@
                         “실거주 목적의 2030 세대에게 2가지 타입의 인테리어 정보를 실시간 제공했어요.”
                       </h3>
                       <p>Project. 신촌 ‘역세권 청년주택’</p>
-                      <a href="" class="link-more">더보기</a>
+                      <a href="./story_casestudy_view_1.html" class="link-more">더보기</a>
                     </div>
                   </div>
                 </li>
@@ -178,7 +181,7 @@
                         “인터랙티브한 실감 전시관을 통해 비대면 양방향 커뮤니케이션을 실시간 제공했어요.”
                       </h3>
                       <p>Project. 2020 에듀테크 코리아 페어</p>
-                      <a href="" class="link-more">더보기</a>
+                      <a href="./story_casestudy_view_1.html" class="link-more">더보기</a>
                     </div>
                   </div>
                 </li> 
@@ -193,9 +196,9 @@
       <div class="cont">
         <div class="links">
           <ul>
-            <li><a href="#" target="_blank" class="link-youtube">올림플래닛 유투브 바로가기</a></li>
-            <li><a href="#" target="_blank" class="link-blog">올림플래닛 블로그 바로가기</a></li>
-            <li><a href="#" target="_blank" class="link-facebook">올림플래닛 페이스북 바로가기</a></li>
+            <li><a href="https://www.youtube.com/c/Olimplanet" target="_blank" class="link-youtube">올림플래닛 유투브 바로가기</a></li>
+            <li><a href="https://blog.naver.com/olimplanet" target="_blank" class="link-blog">올림플래닛 블로그 바로가기</a></li>
+            <li><a href="https://www.facebook.com/olimplanet" target="_blank" class="link-facebook">올림플래닛 페이스북 바로가기</a></li>
           </ul>
         </div>
         <div class="text">
@@ -236,6 +239,21 @@
       casestudyListBody.find('.item-' + cate).parent('li').show();
     }
   });
+
+  var checkWidth = function(){
+    var w = $(window).width();
+    if (w<=760) {
+      if (casestudyListTab.hasClass('tab-all-on')) {
+        casestudyListTab.attr('class', 'casestudy-list-tab tab-zipview-on');
+        casestudyListItems.hide();
+        casestudyListBody.find('.item-zipview').parent('li').show();
+      }
+    }
+  };
+  $(window).on('resize', function(){
+    checkWidth();
+  });
+  checkWidth();
 </script>
 
 </body>
