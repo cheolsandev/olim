@@ -22,12 +22,30 @@ Olim.headerFunc = function(){
       }
     }
   });
-  
+};
+
+Olim.floatView = function(){
+  var targets = $('.appear-cont');
+
+  var checkScroll = function(target){
+    var s = $(window).scrollTop(),
+    t = target.offset().top - $(window).height();
+    if (s > t) {
+      target.addClass('appeared');
+    }
+  };
+
+  $(window).on('scroll', function(){
+    targets.each(function(){
+      checkScroll($(this));
+    });
+  });
 };
 
 Olim.init = function(){
   // common
   Olim.headerFunc();
+  Olim.floatView();
 };
 
 Olim.init();
