@@ -1,43 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="128" height="128" viewBox="0 0 128 128">
   <defs>
-    <clipPath id="clip-_00_r_ico1_01">
-      <rect width="120" height="120"/>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8200ff"/>
+      <stop offset="0.089" stop-color="#8502f8"/>
+      <stop offset="0.216" stop-color="#8e09e5"/>
+      <stop offset="0.367" stop-color="#9e14c5"/>
+      <stop offset="0.537" stop-color="#b3239a"/>
+      <stop offset="0.721" stop-color="#ce3762"/>
+      <stop offset="0.915" stop-color="#ef4e1f"/>
+      <stop offset="0.999" stop-color="#ff5a00"/>
+      <stop offset="0.999" stop-color="#f8540d"/>
+      <stop offset="0.999" stop-color="#f34f19"/>
+      <stop offset="1" stop-color="#ef4c20"/>
+      <stop offset="1" stop-color="#ef4c22"/>
+    </linearGradient>
+    <filter id="타원_15042" x="19.489" y="53.468" width="8.592" height="8.592" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.971" result="blur"/>
+      <feFlood flood-color="#5b54cf" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="타원_15043" x="31.13" y="97.122" width="8.592" height="8.592" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.971" result="blur-2"/>
+      <feFlood flood-color="#5b54cf" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="타원_15044" x="109.182" y="77.51" width="8.592" height="8.592" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.971" result="blur-3"/>
+      <feFlood flood-color="#5b54cf" flood-opacity="0.749"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Solution_1">
+      <rect width="128" height="128"/>
     </clipPath>
   </defs>
-  <g id="_00_r_ico1_01" data-name="00_r_ico1_01" clip-path="url(#clip-_00_r_ico1_01)">
-    <g id="그룹_13460" data-name="그룹 13460">
-      <g id="c_icon_02" transform="translate(2.262 7.289)">
-        <rect id="사각형_5831" data-name="사각형 5831" width="52.933" height="77.945" transform="translate(96.33 9.516) rotate(90)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <ellipse id="타원_15017" data-name="타원 15017" cx="0.807" cy="0.836" rx="0.807" ry="0.836" transform="translate(22.53 13.373)" fill="#5b54cf"/>
-        <ellipse id="타원_15018" data-name="타원 15018" cx="0.807" cy="0.836" rx="0.807" ry="0.836" transform="translate(25.768 13.373)" fill="#5b54cf"/>
-        <ellipse id="타원_15019" data-name="타원 15019" cx="0.807" cy="0.836" rx="0.807" ry="0.836" transform="translate(29.006 13.373)" fill="#5b54cf"/>
-        <circle id="타원_15020" data-name="타원 15020" cx="8.714" cy="8.714" r="8.714" transform="translate(49.608 26.297)" fill="none" stroke="#ffcd7d" stroke-miterlimit="10" stroke-width="3.05"/>
-        <circle id="타원_15021" data-name="타원 15021" cx="13.619" cy="13.619" r="13.619" transform="translate(44.704 21.392)" fill="none" stroke="#ffe6be" stroke-miterlimit="10" stroke-width="3.05"/>
-        <path id="패스_28535" data-name="패스 28535" d="M83.829,63.826v-3.91a3.45,3.45,0,0,1,.783-2.355,3.015,3.015,0,0,1,2.355-.96,3.18,3.18,0,0,1,3.362,3.291V78.081a16.657,16.657,0,0,1-.636,4.469c-1,3.639-2.814,7.266-2.944,10.6a22.923,22.923,0,0,0,.135,3.7v.029A2.744,2.744,0,0,1,85.4,99.572c-1.7.936-3.58.948-8.791.948-5.523,0-6.783-.553-8.243-1.6a2.744,2.744,0,0,1-1.213-2.22h0a14.025,14.025,0,0,0-.483-3.138c-.854-2.832-2.3-3.709-4.787-7.124-1.914-2.585-2.667-8.3-4.1-10.651L50.368,67.1c-1.1-1.325-1.413-3.18.6-4.858,1.9-1.566,3.727-.394,4.593.33l8.4,8.019V43.99a3.31,3.31,0,1,1,6.618-.118V63.826h0V55.583a3.315,3.315,0,0,1,3.309-3.315h0a3.315,3.315,0,0,1,3.333,3.338v2.067a3.315,3.315,0,1,1,6.624,0v6.153Z" transform="translate(-8.143 -8.177)" fill="#ffc8bb"/>
-        <rect id="사각형_5832" data-name="사각형 5832" width="25.036" height="12.212" rx="2.577" transform="translate(56.474 88.262)" fill="#5b54cf"/>
-        <circle id="타원_15022" data-name="타원 15022" cx="0.889" cy="0.889" r="0.889" transform="translate(77.241 91.589)" fill="#fff"/>
-        <rect id="사각형_5833" data-name="사각형 5833" width="21.309" height="31.183" transform="translate(13.739 36.424)" fill="#ceccf1"/>
-        <rect id="사각형_5834" data-name="사각형 5834" width="4.981" height="4.981" transform="translate(16.689 41.482)" fill="#5b54cf"/>
-        <rect id="사각형_5835" data-name="사각형 5835" width="4.981" height="4.981" transform="translate(16.689 49.596)" fill="#5b54cf"/>
-        <rect id="사각형_5836" data-name="사각형 5836" width="4.981" height="4.981" transform="translate(16.689 57.739)" fill="#5b54cf"/>
-        <line id="선_3480" data-name="선 3480" x2="8.508" transform="translate(23.707 42.307)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3481" data-name="선 3481" x2="8.508" transform="translate(23.707 44.02)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3482" data-name="선 3482" x2="8.508" transform="translate(23.707 45.733)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3483" data-name="선 3483" x2="8.508" transform="translate(23.707 50.196)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3484" data-name="선 3484" x2="8.508" transform="translate(23.707 51.91)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3485" data-name="선 3485" x2="8.508" transform="translate(23.707 53.623)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3486" data-name="선 3486" x2="8.508" transform="translate(23.707 58.557)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3487" data-name="선 3487" x2="8.508" transform="translate(23.707 60.271)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3488" data-name="선 3488" x2="8.508" transform="translate(23.707 61.978)" fill="none" stroke="#5b54cf" stroke-miterlimit="10" stroke-width="0.762"/>
-        <rect id="사각형_5837" data-name="사각형 5837" width="21.256" height="29.481" transform="translate(101.446 34.193) rotate(180)" fill="#ffcd7d"/>
-        <rect id="사각형_5838" data-name="사각형 5838" width="10.999" height="14.349" transform="translate(98.008 8.769) rotate(90)" fill="#ffe6be"/>
-        <line id="선_3489" data-name="선 3489" x2="14.361" transform="translate(83.765 21.763)" fill="none" stroke="#ffe6be" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3490" data-name="선 3490" x2="14.361" transform="translate(83.765 27.887)" fill="none" stroke="#ffe6be" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3491" data-name="선 3491" x2="9.592" transform="translate(83.765 29.93)" fill="none" stroke="#ffe6be" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3492" data-name="선 3492" x2="14.361" transform="translate(83.765 23.806)" fill="none" stroke="#ffe6be" stroke-miterlimit="10" stroke-width="0.762"/>
-        <line id="선_3493" data-name="선 3493" x2="14.361" transform="translate(83.765 25.85)" fill="none" stroke="#ffe6be" stroke-miterlimit="10" stroke-width="0.762"/>
+  <g id="Solution_1" clip-path="url(#clip-Solution_1)">
+    <g id="그룹_13614" data-name="그룹 13614" transform="translate(13 18)">
+      <path id="패스_28728" data-name="패스 28728" d="M181.34,310.842q-1.586,0-3.2-.066c-10.923-.45-21.131-3.212-28.744-7.777-8.042-4.822-12.321-11.126-12.048-17.75s5.056-12.554,13.469-16.7c7.963-3.923,18.361-5.834,29.286-5.384,23.425.967,41.342,12.179,40.792,25.528h0C220.369,301.428,203.251,310.842,181.34,310.842Zm-4.386-43.156c-9.065,0-17.537,1.737-24.114,4.977-6.838,3.369-10.714,7.905-10.915,12.775s3.289,9.711,9.826,13.63c6.967,4.178,16.405,6.709,26.576,7.129,20.16.838,37.558-7.27,37.988-17.691s-16.24-19.927-36.4-20.759Q178.426,267.685,176.954,267.685Z" transform="translate(-128.194 -227.956)" opacity="0.5" fill="url(#linear-gradient)"/>
+      <ellipse id="타원_15041" data-name="타원 15041" cx="30.528" cy="49.707" rx="30.528" ry="49.707" transform="matrix(0.041, -0.999, 0.999, 0.041, 0, 87.555)" fill="none" stroke="#8200ff" stroke-miterlimit="10" stroke-width="1"/>
+      <g transform="matrix(1, 0, 0, 1, -13, -18)" filter="url(#타원_15042)">
+        <circle id="타원_15042-2" data-name="타원 15042" cx="1.383" cy="1.383" r="1.383" transform="translate(22.4 56.38)" fill="#8200ff"/>
       </g>
-      <rect id="사각형_6118" data-name="사각형 6118" width="120" height="120" fill="none"/>
+      <g transform="matrix(1, 0, 0, 1, -13, -18)" filter="url(#타원_15043)">
+        <circle id="타원_15043-2" data-name="타원 15043" cx="1.383" cy="1.383" r="1.383" transform="translate(34.04 100.03)" fill="#8200ff"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -13, -18)" filter="url(#타원_15044)">
+        <circle id="타원_15044-2" data-name="타원 15044" cx="1.383" cy="1.383" r="1.383" transform="translate(112.1 80.42)" fill="#8200ff"/>
+      </g>
+      <g id="그룹_13587" data-name="그룹 13587" transform="translate(22.605 0)">
+        <path id="패스_28729" data-name="패스 28729" d="M187.924,284.967l29.269-13.892-28.03-16.152-29.758,13.82Z" transform="translate(-159.405 -224.767)" fill="#8200ff"/>
+        <path id="패스_28730" data-name="패스 28730" d="M237.455,221.754,236.216,251.8l-28.03-16.152,1-30.156Z" transform="translate(-178.428 -205.49)" fill="#d9b2ff"/>
+        <path id="패스_28731" data-name="패스 28731" d="M160.647,219.371l29.515-13.881-1,30.156-29.758,13.82Z" transform="translate(-159.405 -205.49)" fill="#a94fff"/>
+      </g>
     </g>
   </g>
 </svg>

@@ -31,7 +31,7 @@
               <a href="./about_company.html">About</a>
               <ul class="sub">
                 <li><a href="./about_company.html">회사소개</a></li>
-                <li><a href="./about_solution.html">솔루션</a></li>
+                <!-- <li><a href="./about_solution.html">솔루션</a></li> -->
               </ul>
             </li>
             <li class="on">
@@ -86,10 +86,10 @@
           <div class="cover-text">
             <div class="cont">
               <h2>
-                완벽한 비대면 전시 사업의 시작, 마이스뷰(miceview)
+                완벽한 비대면 전시·박람회의 시작, 마이스뷰(miceview)
               </h2>
               <p>
-                분양 사업부터 중개까지, 부동산을 경험하는 새로운 문화의 시작
+                관람객부터 바이어까지, 시공간 경계 없는 언택트 관람 경험을 제공해보세요
               </p> 
             </div>
           </div>
@@ -214,18 +214,19 @@
                 </ul>
               </div>
               <div class="intro-smartphone">
+                <div class="phone appear-cont"></div>
                 <div class="inner appear-cont">
                   <video autoplay loop muted preload="auto" src="./images/industry/miceview_phone_1.mp4" class="video-0" style="display: block;"></video>
                   <video autoplay loop muted preload="auto" src="./images/industry/miceview_phone_2.mp4" class="video-1"></video>
                   <video autoplay loop muted preload="auto" src="./images/industry/miceview_phone_3.mp4" class="video-2"></video>
-                  <video autoplay loop muted preload="auto" src="./images/industry/miceview_phone_3.mp4" class="video-3"></video>
+                  <video autoplay loop muted preload="auto" src="./images/industry/miceview_phone_4.mp4" class="video-3"></video>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- industry - miceview 3 -->
-        <div class="industry-sec sec_3 miceview_3 pc-only">
+        <div class="industry-sec sec_3 miceview_3">
           <div class="cont">
             <h2>높은 접근성</h2>
             <div class="sub">
@@ -235,7 +236,7 @@
           </div>
         </div>
         <!-- industry - miceview 4 -->
-        <div class="industry-sec sec_4 miceview_4 pc-only">
+        <div class="industry-sec sec_4 miceview_4">
           <div class="cont">
             <h2>체험하기</h2>
             <div class="sub">
@@ -267,7 +268,7 @@
                         만족도가 높았어요.”
                       </div>
                       <p>Project. 2020 에듀테크 코리아 페어</p>
-                      <a href="https://www.olimplanet.com/casestudy/edutech2020" class="link-more">더보기</a>
+                      <a href="http://olimplanet.com.s3-website.ap-northeast-2.amazonaws.com/story_casestudy_view_mice_2.html" class="link-more">더보기</a>
                     </div>
                   </div>
                 </li>
@@ -283,7 +284,7 @@
                         미래를 볼 수 있었어요.”
                       </div>
                       <p>Project. 집코노미 언택트 박람회</p>
-                      <a href="https://www.olimplanet.com/casestudy/jipconomy2020" class="link-more">더보기</a>
+                      <a href="http://olimplanet.com.s3-website.ap-northeast-2.amazonaws.com/story_casestudy_view_mice_1.html" class="link-more">더보기</a>
                     </div>
                   </div>
                 </li>
@@ -320,7 +321,7 @@
           <strong class="company">Olimplanet</strong>
           <address>
             <p><strong>(주)올림플래닛</strong> 서울특별시 강남구 선릉로 561 (역삼동, RUBINA사옥) 2F</p>
-            <p>TEL:  02-511-5110   FAX:  02-6499-2183</p>
+            <p>TEL: 1544-6517 FAX: 02-6499-2183</p>
           </address>
           <p class="copy">Copyright &copy; 2017 OLIM PLANET Inc.</p>
         </div>
@@ -338,21 +339,30 @@
   slideItem = $('.slide-item'),
   slidePage = $('.slide-page'),
   introIndex = 0,
-  intervalKey = 0;
+  intervalKey = 0,
+  isSliding = false;
 
   var slideChange = function(idx){
-    if (idx >= slideItem.length) {
-      idx = 0;
+    if (!isSliding) {
+      isSliding = true;
+      if (idx >= slideItem.length) {
+        idx = 0;
+      }
+      slideItem.removeClass('slide-on')
+      .eq(introIndex).addClass('slide-out');
+      slideItem.eq(idx).addClass('slide-on');
+      slidePage.find('li').removeClass('page-on')
+      .eq(idx).addClass('page-on');
+      $('.video-' + introIndex).hide();
+      $('.video-' + introIndex)[0].pause();
+      $('.video-' + idx).show();
+      $('.video-' + idx)[0].load();
+      setTimeout(function(){
+        slideItem.removeClass('slide-out');
+        introIndex = idx;
+        isSliding = false;
+      }, 500);
     }
-    slideItem.removeClass('slide-on')
-    .eq(introIndex).addClass('slide-out');
-    slideItem.eq(idx).addClass('slide-on');
-    slidePage.find('li').removeClass('page-on')
-    .eq(idx).addClass('page-on');
-    setTimeout(function(){
-      slideItem.removeClass('slide-out');
-      introIndex = idx;
-    }, 500);
   }
 
   slidePage.find('a').on('click', function(event){
@@ -365,12 +375,12 @@
 
     intervalKey = setInterval(function(){
       slideChange(introIndex + 1);
-    }, 3000);
+    }, 4000);
   });
 
   intervalKey = setInterval(function(){
     slideChange(introIndex + 1);
-  }, 2600);
+  }, 4000);
 </script>
 
 </body>

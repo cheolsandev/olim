@@ -31,7 +31,7 @@
               <a href="./about_company.html">About</a>
               <ul class="sub">
                 <li><a href="./about_company.html">회사소개</a></li>
-                <li><a href="./about_solution.html">솔루션</a></li>
+                <!-- <li><a href="./about_solution.html">솔루션</a></li> -->
               </ul>
             </li>
             <li>
@@ -103,15 +103,15 @@
           <div class="view-index">
             <h2>목차</h2>
             <ul>
-              <li class="view-on">Background</li>
-              <li>Approach</li>
-              <li>Solution</li>
+              <li class="view-on"><a href="#anchorBackground">Background</a></li>
+              <li><a href="#anchorApproach">Approach</a></li>
+              <li><a href="#anchorSolution">Solution</a></li>
             </ul>
           </div>
           <div class="cont">
             <article>
               <section>
-                <h1>Background</h1>
+                <h1 id="anchorBackground">Background</h1>
                 <div class="large-thumb">
                   <div class="thumb">
                     <img src="./images/story/casestudy_view/mice_1/thumb_1.jpg" alt="">
@@ -141,7 +141,7 @@
                 </div>
               </section>
               <section>
-                <h1>Approach</h1>
+                <h1 id="anchorApproach">Approach</h1>
                 <div class="thumb-list">
                   <div class="thumb">
                     <img src="./images/story/casestudy_view/mice_1/thumb_4.jpg" alt="">
@@ -166,10 +166,10 @@
                   동일한 전시 규모와 부스 디자인, 사진전, 콘서트 등 부대행사가 진행되는 특별 공간까지, 참관객 및 바이어의 동선까지 고려한 완벽한 '집코노미 언택트 박람회'를 제공했습니다.
                 </div>
                 <div class="large-thumb">
-                  <div class="thumb">
-                    <img src="./images/story/casestudy_view/mice_1/thumb_7.jpg" alt="">
+                  <div class="movie">
+                    <iframe src="https://www.youtube.com/embed/BEaA0ARkKNg" frameborder="0" allowfullscreen></iframe>
                   </div>
-                  <p class="caption">(위)  교체가 필요한 부분입니다.</p>
+                  <p class="caption">(위) 홈페이지 임베딩을 통해 편리한 활용이 가능하다</p>
                 </div>
                 <div class="text">
                   <p class="lead">“촉박한 준비 기간이지만 퀄리티 높은 공간을 구현하고 싶어요”</p>
@@ -201,7 +201,7 @@
                 </div>
               </section>
               <section>
-                <h1>Solution</h1>
+                <h1 id="anchorSolution">Solution</h1>
                 <div class="large-thumb">
                   <div class="thumb">
                     <img src="./images/story/casestudy_view/mice_1/thumb_10.jpg" alt="">
@@ -250,7 +250,7 @@
           <strong class="company">Olimplanet</strong>
           <address>
             <p><strong>(주)올림플래닛</strong> 서울특별시 강남구 선릉로 561 (역삼동, RUBINA사옥) 2F</p>
-            <p>TEL:  02-511-5110   FAX:  02-6499-2183</p>
+            <p>TEL: 1544-6517 FAX: 02-6499-2183</p>
           </address>
           <p class="copy">Copyright &copy; 2017 OLIM PLANET Inc.</p>
         </div>
@@ -265,27 +265,57 @@
 
 <script>
   var viewIndex = $('.view-index'),
-  secList = $('.casestudy-view').find('section');
+  secList = $('.casestudy-view').find('section'),
+  anchorMoving = false,
+  topPadding = 0;
 
   $(window).on('scroll', function(){
     var thisTop = $(window).scrollTop();
 
-    if (thisTop >= (secList.eq(0).offset().top - 121)) {
+    if (thisTop >= (secList.eq(0).offset().top - topPadding)) {
       // fixed
       if (!viewIndex.hasClass('fixed')) {
         viewIndex.addClass('fixed');
       }
       viewIndex.find('li').removeClass('view-on')
       .eq(0).addClass('view-on');
-      if (thisTop >= secList.eq(2).offset().top - 121) {
+
+      if ($(window).width()<=760) {
+        topPadding = 65;
+      } else {
+        topPadding = 121;
+      }
+
+      if (thisTop >= secList.eq(2).offset().top - topPadding) {
         viewIndex.find('li').removeClass('view-on')
         .eq(2).addClass('view-on');
-      } else if (thisTop >= secList.eq(1).offset().top - 121) {
+      } else if (thisTop >= secList.eq(1).offset().top - topPadding) {
         viewIndex.find('li').removeClass('view-on')
         .eq(1).addClass('view-on');
       }
-    } else if (thisTop < (secList.eq(0).offset().top - 121)) {
+    } else if (thisTop < (secList.eq(0).offset().top - topPadding)) {
       viewIndex.removeClass('fixed');
+    }
+  });
+
+  viewIndex.find('a').on('click', function(event){
+    event.preventDefault();
+
+    if (!anchorMoving) {
+      anchorMoving = true;
+
+      var anchor = $(this).attr('href').slice(1),
+      $thisSection = $('#' + anchor).parent('section');
+
+      if ($(window).width()<=760) {
+        topPadding = 65;
+      } else {
+        topPadding = 121;
+      }
+      
+      $('html, body').animate({scrollTop: ($thisSection.offset().top - topPadding + 1) + 'px'}, 1000, function(){
+        anchorMoving = false;
+      });
     }
   });
 </script>

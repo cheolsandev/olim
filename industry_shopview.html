@@ -31,7 +31,7 @@
               <a href="./about_company.html">About</a>
               <ul class="sub">
                 <li><a href="./about_company.html">회사소개</a></li>
-                <li><a href="./about_solution.html">솔루션</a></li>
+                <!-- <li><a href="./about_solution.html">솔루션</a></li> -->
               </ul>
             </li>
             <li class="on">
@@ -89,7 +89,7 @@
                 실감 경험으로 즐거운 e스토어, 샵뷰(shopview)
               </h2>
               <p>
-                소비자를 위해 특별한 온라인 스토어 경험을 제공해 보세요
+                소비자를 위해 특별한 온라인 스토어 경험을 제공해보세요
               </p> 
             </div>
           </div>
@@ -195,26 +195,14 @@
                     실감 경험을 고객에게 제공해보세요
                   </p>
                 </div>
-                <!-- <div class="slide-item">
-                  <h3>웨비나도 손쉽게</h3>
-                  <div class="sub">
-                    실감형 공간에서 국내외 연사들의<br>
-                    컨퍼런스를 편하게!
-                  </div>
-                  <p>
-                    · 전시/박람회 관람 외 컨퍼런스,<br>
-                    스피치 등 연사들과의 만남이<br>
-                    생생하게 이뤄집니다
-                  </p>
-                </div> -->
                 <ul class="slide-page">
                   <li class="page-on"><a href="#1"></a></li>
                   <li><a href="#2">2</a></li>
                   <li><a href="#3">3</a></li>
-                  <!-- <li><a href="#4">4</a></li> -->
                 </ul>
               </div>
               <div class="intro-smartphone">
+                <div class="phone appear-cont"></div>
                 <div class="inner appear-cont">
                   <video autoplay loop muted preload="auto" src="./images/industry/shopview_phone_1.mp4" class="video-0" style="display: block;"></video>
                   <video autoplay loop muted preload="auto" src="./images/industry/shopview_phone_2.mp4" class="video-1"></video>
@@ -225,7 +213,7 @@
           </div>
         </div>
         <!-- industry - shopview 3 -->
-        <div class="industry-sec sec_3 shopview_3 pc-only">
+        <div class="industry-sec sec_3 shopview_3">
           <div class="cont">
             <h2>높은 접근성</h2>
             <div class="sub">
@@ -235,7 +223,7 @@
           </div>
         </div>
         <!-- industry - shopview 4 -->
-        <div class="industry-sec sec_4 shopview_4 pc-only">
+        <div class="industry-sec sec_4 shopview_4">
           <div class="cont">
             <h2>체험하기</h2>
             <div class="sub">
@@ -243,36 +231,7 @@
             </div>
           </div>
           <div class="vr-player-wrap">
-            <iframe id="vr-player_sv" src="https://vr.zipview.kr/product/ZR012/interior/00_Flakiki&amp;mode=embed" class="vr-iframe" allowfullscreen></iframe>
-          </div>
-        </div>
-        <!-- industry - shopview 5-->
-        <div class="industry-sec sec_5 shopview_5">
-          <div class="cont">
-            <h2>케이스스터디</h2>
-            <div class="sub">
-              shopview를 만난 고객들의 이야기입니다
-            </div>
-            <div class="casestudy-list">
-              <ul>
-                <li>
-                  <div class="item item_1">
-                    <div class="thumb">
-                      <span class="img" style="background-image:url('./images/thumbs/img_casestudy_shopview_1.jpg');"></span>
-                    </div>
-                    <div class="text">
-                      <div class="message">
-                        “실감나는 온라인 쇼룸을 통해<br>
-                        자발적인 입소문과 높은<br>
-                        브랜딩 효과를 창출했어요 .”
-                      </div>
-                      <p>Project. 플라키키(FLAKIKI)</p>
-                      <a href="https://www.olimplanet.com/casestudy/edutech2020" class="link-more">더보기</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+            <iframe id="vr-player_sv" src="https://vr.zipview.kr/product/ZR012/interior/00_Flakiki?mode=embed" class="vr-iframe" allowfullscreen></iframe>
           </div>
         </div>
         <!-- contact-->
@@ -304,7 +263,7 @@
           <strong class="company">Olimplanet</strong>
           <address>
             <p><strong>(주)올림플래닛</strong> 서울특별시 강남구 선릉로 561 (역삼동, RUBINA사옥) 2F</p>
-            <p>TEL:  02-511-5110   FAX:  02-6499-2183</p>
+            <p>TEL: 1544-6517 FAX: 02-6499-2183</p>
           </address>
           <p class="copy">Copyright &copy; 2017 OLIM PLANET Inc.</p>
         </div>
@@ -322,21 +281,30 @@
   slideItem = $('.slide-item'),
   slidePage = $('.slide-page'),
   introIndex = 0,
-  intervalKey = 0;
+  intervalKey = 0,
+  isSliding = false;
 
   var slideChange = function(idx){
-    if (idx >= slideItem.length) {
-      idx = 0;
+    if (!isSliding) {
+      isSliding = true;
+      if (idx >= slideItem.length) {
+        idx = 0;
+      }
+      slideItem.removeClass('slide-on')
+      .eq(introIndex).addClass('slide-out');
+      slideItem.eq(idx).addClass('slide-on');
+      slidePage.find('li').removeClass('page-on')
+      .eq(idx).addClass('page-on');
+      $('.video-' + introIndex).hide();
+      $('.video-' + introIndex)[0].pause();
+      $('.video-' + idx).show();
+      $('.video-' + idx)[0].load();
+      setTimeout(function(){
+        slideItem.removeClass('slide-out');
+        introIndex = idx;
+        isSliding = false;
+      }, 500);
     }
-    slideItem.removeClass('slide-on')
-    .eq(introIndex).addClass('slide-out');
-    slideItem.eq(idx).addClass('slide-on');
-    slidePage.find('li').removeClass('page-on')
-    .eq(idx).addClass('page-on');
-    setTimeout(function(){
-      slideItem.removeClass('slide-out');
-      introIndex = idx;
-    }, 500);
   }
 
   slidePage.find('a').on('click', function(event){
@@ -349,12 +317,12 @@
 
     intervalKey = setInterval(function(){
       slideChange(introIndex + 1);
-    }, 3000);
+    }, 4000);
   });
 
   intervalKey = setInterval(function(){
     slideChange(introIndex + 1);
-  }, 2600);
+  }, 4000);
 </script>
 
 </body>
